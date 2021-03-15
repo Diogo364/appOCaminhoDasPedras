@@ -1,3 +1,32 @@
 <resources>
+
     <string name="app_name">O Caminho das Pedras</string>
+
+    <!--
+        activity_login
+    -->
+    <string name="email_login">E-mail</string>
+    <string name="password_login">Senha</string>
+    <string name="sing_in_button_login">Entrar</string>
+    <string name="sing_up_button_login">Cadastrar</string>
+    <string name="forgot_password_login">Esqueci a senha</string>
+
+    <!--
+        activity_forgot_password
+    -->
+    <string name="email_forgot_password">E-mail</string>
+    <string name="confirm_password_forgot_password">Confirme a senha</string>
+    <string name="back_button_forgot_password">Voltar</string>
+    <string name="new_password_forgot_password">Nova senha</string>
+    <string name="title_forgot_password">Esqueci a Senha</string>
+
+    <!--
+        activity_sign_up
+    -->
+    <string name="email_sign_up">E-mail</string>
+    <string name="password_sign_up">Senha</string>
+    <string name="confirm_password_sign_up">Confirme a senha</string>
+    <string name="sing_up_button_sign_up">Cadastrar</string>
+    <string name="back_button_sign_up">Voltar</string>
+
 </resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/appNameLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/glHHalfLogin"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btSingInLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="@string/sing_in_button_login"
+        app:layout_constraintEnd_toStartOf="@+id/glVThreeQuartersLogin"
+        app:layout_constraintStart_toStartOf="@+id/glVQuarterLogin"
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordLogin"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btSingUpLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autoText="false"
+        android:text="@string/sing_up_button_login"
+        app:layout_constraintEnd_toStartOf="@+id/glVThreeQuartersLogin"
+        app:layout_constraintStart_toStartOf="@+id/glVQuarterLogin"
+        app:layout_constraintTop_toBottomOf="@+id/btSingInLogin"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/etUsernameLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/email_login"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/glVThreeQuartersLogin"
+        app:layout_constraintStart_toStartOf="@+id/glVQuarterLogin"
+        app:layout_constraintTop_toTopOf="@+id/glHHalfLogin" />
+
+    <EditText
+        android:id="@+id/etPasswordLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/password_login"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/glVThreeQuartersLogin"
+        app:layout_constraintStart_toStartOf="@+id/glVQuarterLogin"
+        app:layout_constraintTop_toBottomOf="@+id/etUsernameLogin" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glVHalfLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glVQuarterLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glVThreeQuartersLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHHalfLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/tvForgotPasswordLogin"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/forgot_password_login"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/glVThreeQuartersLogin"
+        app:layout_constraintStart_toStartOf="@+id/glVQuarterLogin"
+        app:layout_constraintTop_toBottomOf="@+id/btSingUpLogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
