@@ -3,30 +3,41 @@
     <string name="app_name">O Caminho das Pedras</string>
 
     <!--
-        activity_login
+        Login Screen
     -->
     <string name="email_login">E-mail</string>
     <string name="password_login">Senha</string>
     <string name="sing_in_button_login">Entrar</string>
-    <string name="sing_up_button_login">Cadastrar</string>
-    <string name="forgot_password_login">Esqueci a senha</string>
+    <string name="sing_up_button_login">Cadastre-se</string>
+    <string name="forgot_password_login">Esqueci a Senha</string>
 
     <!--
-        activity_forgot_password
-    -->
-    <string name="email_forgot_password">E-mail</string>
-    <string name="confirm_password_forgot_password">Confirme a senha</string>
-    <string name="back_button_forgot_password">Voltar</string>
-    <string name="new_password_forgot_password">Nova senha</string>
-    <string name="title_forgot_password">Esqueci a Senha</string>
-
-    <!--
-        activity_sign_up
+        Sign Up Cycle
     -->
     <string name="email_sign_up">E-mail</string>
     <string name="password_sign_up">Senha</string>
-    <string name="confirm_password_sign_up">Confirme a senha</string>
-    <string name="sing_up_button_sign_up">Cadastrar</string>
+    <string name="birth_date_sign_up">Confirme a senha</string>
+    <string name="terms_of_use_sign_up">Concordo com os Termos de Uso de Dados</string>
+    <string name="register_button_sign_up">Cadastrar</string>
     <string name="back_button_sign_up">Voltar</string>
+    <string name="finished_message_sign_up">Cadastro Realidado!</string>
+    <string name="beginning_button_sign_up">Inicio</string>
+
+    <!--
+        Forgot Password Cycle
+    -->
+    <string name="title_forgot_password">Esqueci a Senha</string>
+
+    <string name="email_forgot_password">E-mail</string>
+    <string name="send_confirmation_code_button_forgot_password">Enviar Código</string>
+    <string name="back_button_forgot_password">Voltar</string>
+
+    <string name="confirmation_code_forgot_password">Código de Verificação</string>
+    <string name="new_password_forgot_password">Nova senha</string>
+    <string name="confirm_password_forgot_password">Confirmação de Senha</string>
+    <string name="change_password_button_forgot_password">Alterar Senha</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>

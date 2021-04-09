@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        O arquivo type.xml armazena as informações de APARÊNCIA DE TEXTO (font, estilo),
+        tamanho de texto, dimensões, espaçamento de letras, etc.
+        Esse arquivo não deve conter informações de componentes (widgets).
+
+        Todas as definições desse arquivo não devem ser acessadas diretamente.
+        Deve-se configurar o tema para usar essas definições ou atribuir a
+        configurações de widgets no arquivo styles.xml.
+    -->
+
+    <style name="TextAppearance.MaterialComponents.Button.BaseButton">
+        <item name="android:textStyle">normal</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Body1.Regular">
+        <item name="android:textStyle">normal</item>
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="LittleRegular">
+        <item name="android:textStyle">normal</item>
+        <item name="fontFamily">@font/roboto_medium_italic</item>
+        <item name="android:fontFamily">@font/roboto_medium_italic</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Title">
+        <item name="android:textStyle">normal</item>
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:shadowColor">@color/dark_gray_1</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="LittleItalic">
+        <item name="fontFamily">@font/roboto_medium_italic</item>
+        <item name="android:fontFamily">@font/roboto_medium_italic</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+
+</resources>
