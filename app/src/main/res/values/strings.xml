@@ -16,7 +16,7 @@
     -->
     <string name="email_sign_up">E-mail</string>
     <string name="password_sign_up">Senha</string>
-    <string name="birth_date_sign_up">Confirme a senha</string>
+    <string name="birth_date_sign_up">Data de Nascimento</string>
     <string name="terms_of_use_sign_up">Concordo com os Termos de Uso de Dados</string>
     <string name="register_button_sign_up">Cadastrar</string>
     <string name="back_button_sign_up">Voltar</string>
@@ -38,6 +38,7 @@
     <string name="change_password_button_forgot_password">Alterar Senha</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register_title_sign_up">Cadastre-se</string>
 
 
 </resources>
