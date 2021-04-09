@@ -12,35 +12,41 @@
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:background="?attr/backgroundColor"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="?attr/backgroundColor"
         tools:context=".ui.activity.LoginActivity">
 
 
         <TextView
-            android:id="@+id/tvRegisterTitle"
+            android:id="@+id/tvFinishedTitleSignUp"
             style="@style/TextAppearance.AppCompat.Title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="32dp"
-            android:text="@string/register_title_sign_up"
-            app:layout_constraintBottom_toTopOf="@+id/etEmailSignUp"
+            android:text="@string/finished_message_sign_up"
+            app:layout_constraintBottom_toTopOf="@+id/glHorizontalHalfSignUp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
 
         <Button
-            android:id="@+id/btRegisterSignUp"
+            android:id="@+id/btBeginningSignUp"
             style="?primaryButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="35dp"
-            android:text="@string/register_button_sign_up"
-            app:layout_constraintBottom_toTopOf="@id/btBackSignUp"
-            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginBottom="83dp"
+            android:text="@string/beginning_button_sign_up"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glHorizontalHalfSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
