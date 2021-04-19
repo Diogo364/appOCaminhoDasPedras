@@ -5,18 +5,31 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import br.com.ocaminhodaspedras.R
-
+import br.com.ocaminhodaspedras.databinding.FragmentLoginBinding
+import br.com.ocaminhodaspedras.databinding.FragmentSignUpBinding
 
 class SignUpFragment : Fragment() {
 
+    private lateinit var binding : FragmentSignUpBinding
+
+    fun goToLogin(view: View){
+        findNavController().navigate(R.id.action_signUpFragment_to_LoginFragment)
+    }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sign_up, container, false)
+        binding = FragmentSignUpBinding.inflate(inflater, container, false)
+
+        binding.fragment = this
+        binding.lifecycleOwner = this
+
+        return binding.root
     }
+
 
 }

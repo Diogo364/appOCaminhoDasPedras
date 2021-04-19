@@ -10,12 +10,11 @@
             type="br.com.ocaminhodaspedras.ui.fragment.LoginFragment" />
     </data>
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:background="?attr/backgroundColor"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.activity.LoginActivity">
+        tools:context=".LoginFragment">
 
 
         <ImageView
@@ -79,7 +78,6 @@
             android:layout_marginBottom="25dp"
             android:text="@string/sing_in_button_login"
             app:layout_constraintBottom_toTopOf="@id/btSignUpLogin"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -91,10 +89,10 @@
             android:layout_marginTop="25dp"
             android:layout_marginBottom="25dp"
             android:text="@string/sing_up_button_login"
+            android:onClick="@{fragment.goToSignUp}"
             app:layout_constraintBottom_toTopOf="@+id/tvForgotPassword"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"/>
 
 
         <TextView

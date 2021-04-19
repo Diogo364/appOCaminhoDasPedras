@@ -6,14 +6,25 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import br.com.ocaminhodaspedras.R
+import br.com.ocaminhodaspedras.databinding.FragmentLoginBinding
+import br.com.ocaminhodaspedras.databinding.FragmentSignUp2Binding
 
 class SignUp2Fragment : Fragment() {
 
+    private lateinit var binding : FragmentSignUp2Binding
+
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sign_up2, container, false)
+        binding = FragmentSignUp2Binding.inflate(inflater, container, false)
+
+        binding.fragment = this
+        binding.lifecycleOwner = this
+
+        return binding.root
     }
+
+
 }

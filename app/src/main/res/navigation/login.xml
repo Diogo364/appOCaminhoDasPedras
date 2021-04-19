@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    app:startDestination="@id/LoginFragment">
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="br.com.ocaminhodaspedras.ui.fragment.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_LoginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="br.com.ocaminhodaspedras.ui.fragment.SignUpFragment"
+        android:label="SignUpFragment" >
+        <action
+            android:id="@+id/action_signUpFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_signUp2Fragment"
+            app:destination="@id/signUp2Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUp2Fragment"
+        android:name="br.com.ocaminhodaspedras.ui.fragment.SignUp2Fragment"
+        android:label="SignUp2Fragment" >
+        <action
+            android:id="@+id/action_signUp2Fragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+    </fragment>
+
+</navigation>
