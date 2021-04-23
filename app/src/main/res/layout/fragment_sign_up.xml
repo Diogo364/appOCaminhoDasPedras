@@ -70,24 +70,26 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <CheckBox
+        <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/cbTermsOfUseSignUp"
-            style="@style/LittleRegular"
+            style="@style/SwitchMaterial"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="15dp"
             android:text="@string/terms_of_use_sign_up"
-            android:layout_marginBottom="25dp"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btRegisterSignUp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/btRegisterSignUp"/>
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/btRegisterSignUp"
             style="?primaryButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="35dp"
+            android:layout_marginBottom="15dp"
             android:text="@string/register_button_sign_up"
+            android:onClick="@{fragment.goToSignUp2}"
             app:layout_constraintBottom_toTopOf="@id/btBackSignUp"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintEnd_toEndOf="parent"
@@ -99,7 +101,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/back_button_sign_up"
-            android:layout_marginBottom="43dp"
+            android:layout_marginBottom="10dp"
             android:onClick="@{fragment.goToLogin}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
