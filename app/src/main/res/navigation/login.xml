@@ -13,12 +13,16 @@
         <action
             android:id="@+id/action_LoginFragment_to_signUpFragment"
             app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_LoginFragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
     </fragment>
 
     <fragment
         android:id="@+id/signUpFragment"
         android:name="br.com.ocaminhodaspedras.ui.fragment.SignUpFragment"
-        android:label="SignUpFragment" >
+        android:label="SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
         <action
             android:id="@+id/action_signUpFragment_to_LoginFragment"
             app:destination="@id/LoginFragment" />
@@ -30,10 +34,16 @@
     <fragment
         android:id="@+id/signUp2Fragment"
         android:name="br.com.ocaminhodaspedras.ui.fragment.SignUp2Fragment"
-        android:label="SignUp2Fragment" >
+        android:label="SignUp2Fragment"
+        tools:layout="@layout/fragment_sign_up2">
         <action
             android:id="@+id/action_signUp2Fragment_to_LoginFragment"
             app:destination="@id/LoginFragment" />
     </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="br.com.ocaminhodaspedras.ui.activity.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
 
 </navigation>

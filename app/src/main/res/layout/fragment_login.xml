@@ -8,6 +8,9 @@
         <variable
             name="fragment"
             type="br.com.ocaminhodaspedras.ui.fragment.LoginFragment" />
+        <variable
+            name="viewmodel"
+            type="br.com.ocaminhodaspedras.ui.viewmodel.LoginViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -48,6 +51,7 @@
             android:layout_marginBottom="20dp"
             android:ems="10"
             android:hint="@string/email_login"
+            android:text="@={viewmodel.email}"
             android:inputType="textEmailAddress"
             android:textAlignment="center"
             app:layout_constraintBottom_toTopOf="@id/etPasswordLogin"
@@ -62,6 +66,7 @@
             android:layout_marginBottom="15dp"
             android:ems="10"
             android:hint="@string/password_login"
+            android:text="@={viewmodel.password}"
             android:inputType="textPassword"
             android:textAlignment="center"
             app:layout_constraintBottom_toTopOf="@id/btLogInLogin"
@@ -76,6 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:text="@string/sing_in_button_login"
+            android:onClick="@{fragment::login}"
             app:layout_constraintBottom_toTopOf="@id/btSignUpLogin"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -87,7 +93,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:text="@string/sing_up_button_login"
-            android:onClick="@{fragment.goToSignUp}"
+            android:onClick="@{fragment::goSignUp}"
             app:layout_constraintBottom_toTopOf="@+id/tvForgotPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>
@@ -100,6 +106,7 @@
             android:layout_height="wrap_content"
             android:text="@string/forgot_password_login"
             android:layout_marginBottom="18dp"
+            android:onClick="@{fragment::goForgot}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>

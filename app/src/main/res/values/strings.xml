@@ -36,9 +36,17 @@
     <string name="new_password_forgot_password">Nova senha</string>
     <string name="confirm_password_forgot_password">Confirmação de Senha</string>
     <string name="change_password_button_forgot_password">Alterar Senha</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="register_title_sign_up">Cadastre-se</string>
+    <string name="email_required">E-mail obrigatório</string>
+    <string name="password_required">Senha obrigatória!</string>
+    <string name="invalid_email">E-mail inválido!</string>
+    <string name="password_minimum_length">Tamanho mínimo de senha: 8 caracteres</string>
+    <string name="login_invalid_credentials">Usuário ou senha inválidos</string>
+    <string name="login_user_disabled">Usuário desabilitado</string>
+    <string name="login_user_not_found">Conta não encontrada para o e-mail informado</string>
+    <string name="login_generic_error">Não foi possível efetuar login. Por favor verifique os dados</string>
+    <string name="password_check_not_equal">Senha e Confirmação são diferentes!</string>
 
 
 </resources>

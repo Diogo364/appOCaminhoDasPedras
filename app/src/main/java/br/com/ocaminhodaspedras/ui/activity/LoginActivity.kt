@@ -14,8 +14,8 @@ import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.WithFragmentBindings
 import javax.inject.Inject
 
-//@AndroidEntryPoint
-//@WithFragmentBindings
+@AndroidEntryPoint
+@WithFragmentBindings
 class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
