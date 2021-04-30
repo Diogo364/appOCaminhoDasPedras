@@ -1,8 +1,8 @@
 package br.com.ocaminhodaspedras.ui
-//
-//import dagger.hilt.android.HiltAndroidApp
-//
-//
-//@HiltAndroidApp
-class OCaminhoDasPedrasApp {
-}
+
+import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
+
+
+@HiltAndroidApp
+class OCaminhoDasPedrasApp: Application() {}
